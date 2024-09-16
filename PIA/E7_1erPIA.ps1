@@ -58,7 +58,7 @@ function Main{
                      }
                     2{
                         try{
-                            Check-FileHash
+                            CheckFileHash
                         } catch{
                             Write-Host "Error al ejecutar: $_"
                         }
