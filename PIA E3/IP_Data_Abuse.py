@@ -50,5 +50,3 @@ def ip_query(ip):
     except requests.RequestException as e:
         logging.error(f'Error al consultar la ip {ip}: {e}')
         print(f"Error: {e}")
-
-report_ip('8.8.8.8', 'Ip con sospecha de actividad maliciosa', 1)
