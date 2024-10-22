@@ -3,13 +3,16 @@ import Keylogger
 import PC_PIA_PwGenerator as PwGenerator
 import PC_PIA_Shodan as mshodan
 from os import system
+import subprocess
+import threading
+import main_sql
 
 print('\t\t---Modulos---')
 print('1-AbuseIPDB')
 print('2-Shodan')
 print('3-Keylogger')
 print('4-Password Generator')
-print('5-PentTest')
+print('5-SQL Injection')
 
 while True:
     op = int(input('Ingrese la opcion a usar: '))
@@ -80,4 +83,5 @@ while True:
                             print(f'Error: {e}')
                 break
             case 5:
+                main_sql.sql_injection_menu()
                 break
