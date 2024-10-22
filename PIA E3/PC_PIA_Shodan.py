@@ -1,3 +1,6 @@
+import shodan
+import logging
+
 def shodan_module():
 
     logging.basicConfig(
@@ -10,9 +13,7 @@ def shodan_module():
 
         print("¿Qué servicio desea buscar?")
         print("1. FTP \n2. SSH \n3. HTTP \n4. MySQL\n")
-        
-    import shodan
-    
+            
     API_KEY = 'pdltGOgtErDmR7DSWL5Qk0fOiJd9z4j6'
     api = shodan.Shodan(API_KEY)
 
