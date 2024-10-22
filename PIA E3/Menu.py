@@ -67,7 +67,7 @@ while True:
                         break
                     case 2:
                         try:
-                            Keylogger.macros
+                            Keylogger.macros()
                         except Exception as e:
                             print(f'Error: {e}')
                         break
