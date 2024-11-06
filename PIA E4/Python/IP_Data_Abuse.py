@@ -63,9 +63,9 @@ def ip_query(ip):
     print(f"Ubicacion del archivo: {reportpath}")
     print("Nombre del archivo: Ipdataabuse_report.txt")
     
-def hash_file(ruta_archivo): 
+def hash_file(filepath): 
     h = hashlib.sha256() 
-    with open(ruta_archivo, 'rb') as archivo: 
+    with open(filepath, 'rb') as archivo: 
         while chunk := archivo.read(8192): h.update(chunk) 
         return h.hexdigest()
 
